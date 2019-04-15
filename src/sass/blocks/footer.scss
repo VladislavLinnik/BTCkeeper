@@ -1,0 +1,32 @@
+.footer {
+    padding: 0 0 50px;
+    position: relative;
+    background-color: $dark-purple;
+    color: #fff;
+
+    &-wrapper {
+        margin-bottom: 35px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &-nav {
+        margin-bottom: -10px;
+        align-self: flex-end;
+
+        &__menu {
+            display: flex;
+
+            .menu-item {
+
+                &:not(:last-child) {
+                    margin-right: 28px;
+                }
+
+                &__link {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}

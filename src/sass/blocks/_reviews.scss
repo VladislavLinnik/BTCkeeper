@@ -72,6 +72,10 @@
         padding: 60px 45px;
         text-align: center;
 
+        @media (max-width: 700px) {
+            width: 100%;
+        }
+
         &__text {
             color: $purple-text;
             font-size: 20px;

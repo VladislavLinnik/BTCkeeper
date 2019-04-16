@@ -10,7 +10,23 @@ $('.js-reviewSlider').slick({
     autoplay: true,
     autoplaySpeed: 2000,
     prevArrow: '<button id="reviews-btn-prev" class="reviews-btn btn-prev">&#8592;</button>',
-    nextArrow: '<button id="reviews-btn-next" class="reviews-btn btn-next">&#8594;</button>'
+    nextArrow: '<button id="reviews-btn-next" class="reviews-btn btn-next">&#8594;</button>',
+    responsive: [
+        {
+          breakpoint: 900,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2,
+          }
+        },
+        {
+          breakpoint: 700,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+    ]
   });
 
 
@@ -36,5 +52,15 @@ $(window).scroll(function() {
     }
     else{
         $('.header').removeClass("header--fixed");
+    }
+});
+
+// mobile navbar
+$( '.nav-toggler' ).click( function() {
+    if ( $( '#menu' ).is( ':hidden' ) ) {
+        $( '#menu' ).show('slideToggle');
+    }
+    else {
+        $( '#menu' ).hide('slideToggle');
     }
 });

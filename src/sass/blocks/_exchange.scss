@@ -1,4 +1,5 @@
 .exchange {
+    padding: 50px 0 110px;
 
     &-text {
         margin: 0 auto;
@@ -13,16 +14,18 @@
 
         &__description {
             margin-bottom: 55px;
-            color: $purple-text:;
+            color: $purple-text;
             font-size: 20px;
             line-height: 1.4;
         }
 
-        &-support {
+        &__support {
+            margin-bottom: 60px;
             color: $purple;
             font-size: 20px;
             line-height: 1.4;
             font-weight: 500;
+            text-align: center;
         }
     }
 
@@ -30,5 +33,17 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+    }
+
+    &-item {
+        margin: 0 40px;
+
+        &__link {
+
+        }
+
+        &__img {
+            max-width: 100%;
+        }
     }
 }

@@ -16,15 +16,17 @@
 	<!-- FAVICON -->
 	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 
+	<!-- ICON FONTS -->
+	<link rel="stylesheet" href="css/social.css">
+
 	<!-- STYLES -->
+	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="css/animate.css">
 	<link rel="stylesheet" href="css/style.css">
 
 	<!-- ПОДКЛЮЧЕНИЕ JQUERY -->
 	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
 	<script src="js/jquery.3.3.1.min.js"></script>
-
-	<!-- SLICK SLIDER -->
-	<script src="css/slick.min.css"></script>
 
 	<!-- FOR SUPPORT HTML5 IN IE -->
 	<!--[if IE]>
@@ -40,7 +42,7 @@
 			<a href="#" class="header-logo">
 				<img src="./img/logo.png" alt="" class="header-logo__img">
 			</a>
-			<nav class="header-nav">
+			<nav class="header-nav" id="menu">
 				<ul class="header-nav__menu">
 					<li class="menu-item"><a href="#" class="menu-item__link">Page 1</a></li>
 					<li class="menu-item"><a href="#" class="menu-item__link">Page 2</a></li>
@@ -71,15 +73,15 @@
 		<div class="exchange-text">
 			<h2 class="exchange-text__heading">Take control of your Bitcoin, ICO & cryptocurrency portfolio</h2>
 			<p class="exchange-text__description">Delta is the ultimate Bitcoin & cryptocurrency portfolio tracker app. Keep track of all cryptocoins, including Bitcoin, Ethereum, Litecoin and over 3000 altcoins. Use the free app to get the latest coin prices and market charts in your local currency and get alerts to make sure you don't miss out on your next crypto investmen</p>
-			<p class="exchange-support">With support for over 200 exchanges, including:</p>
+			<p class="exchange-text__support">With support for over 200 exchanges, including:</p>
 		</div>
 		<ul class="exchange-list">
-			<li class="exchange-item"><a href="#"><img src="" alt=""></a></li>
-			<li class="exchange-item"><a href="#"><img src="" alt=""></a></li>
-			<li class="exchange-item"><a href="#"><img src="" alt=""></a></li>
-			<li class="exchange-item"><a href="#"><img src="" alt=""></a></li>
-			<li class="exchange-item"><a href="#"><img src="" alt=""></a></li>
-			<li class="exchange-item"><a href="#"><img src="" alt=""></a></li>
+			<li class="exchange-item"><a class="exchange-item__link" href="#"><img class="exchange-item__img" src="./img/exchanges/1.png" alt=""></a></li>
+			<li class="exchange-item"><a class="exchange-item__link" href="#"><img class="exchange-item__img" src="./img/exchanges/2.png" alt=""></a></li>
+			<li class="exchange-item"><a class="exchange-item__link" href="#"><img class="exchange-item__img" src="./img/exchanges/3.png" alt=""></a></li>
+			<li class="exchange-item"><a class="exchange-item__link" href="#"><img class="exchange-item__img" src="./img/exchanges/4.png" alt=""></a></li>
+			<li class="exchange-item"><a class="exchange-item__link" href="#"><img class="exchange-item__img" src="./img/exchanges/5.png" alt=""></a></li>
+			<li class="exchange-item"><a class="exchange-item__link" href="#"><img class="exchange-item__img" src="./img/exchanges/6.png" alt=""></a></li>
 		</ul>
 	</section>
 
@@ -88,7 +90,7 @@
 		<div class="angle-top"></div>
 		<div class="container">
 			<ul class="functional-list">
-				<li class="functional-item">
+				<li class="functional-item wow fadeInLeft" data-wow-offset="100">
 					<div class="functional-item__img">
 						<img src="./img/functional.png" alt="">
 					</div>
@@ -97,7 +99,7 @@
 						<p class="description">A clear overview of your total portfolio balance, total profit/loss since you started investing or since the last 24 hours. See the trend of your cryptocurrency investments with your personal portfolio graph. In BTC, ETH or any fiat or cryptocurrency.</p>
 					</div>
 				</li>
-				<li class="functional-item">
+				<li class="functional-item wow fadeInRight" data-wow-offset="100">
 					<div class="functional-item__text">
 						<h2 class="heading">Connect with wallets and exchanges</h2>
 						<p class="description">Simply connect your portfolio with your go to exchanges and wallets. Transactions and airdrops will automatically be tracked as well as the exchange fees.</p>
@@ -106,7 +108,7 @@
 						<img src="./img/functional.png" alt="">
 					</div>
 				</li>
-				<li class="functional-item">
+				<li class="functional-item wow fadeInLeft" data-wow-offset="100">
 					<div class="functional-item__img">
 						<img src="./img/functional.png" alt="">
 					</div>
@@ -115,7 +117,7 @@
 						<p class="description">Set up your notification for your favorite assets and don’t miss any team communication with Delta Direct. Delta comes with pre-personalised notifications based on your app behavior.</p>
 					</div>
 				</li>
-				<li class="functional-item">
+				<li class="functional-item wow fadeInRight" data-wow-offset="100">
 					<div class="functional-item__text">
 						<h2 class="heading">Market overview & watchlist</h2>
 						<p class="description">See the current price, team info, communications, latest trend chart, your holding and your profit/loss for each asset you have in your portfolio. Or just add coins to your watchlist if you just want to keep track of certain cryptocurrencies.</p>
@@ -124,7 +126,7 @@
 						<img src="./img/functional.png" alt="">
 					</div>
 				</li>
-				<li class="functional-item">
+				<li class="functional-item wow fadeInLeft" data-wow-offset="100">
 					<div class="functional-item__img">
 						<img src="./img/functional.png" alt="">
 					</div>
@@ -133,7 +135,7 @@
 						<p class="description">With over 3000 coins supported, Delta offers the widest range of coins, including Bitcoin, Ethereum, Bitcoin Cash, Litecoin, Ripple, Dash, Monero, Bitcoin Gold, Cardano, EOS, Stellar, NEO, Zcash, Stratis, Wanchain, Nano, Binance Coin, Dogecoin and many more!</p>
 					</div>
 				</li>
-				<li class="functional-item">
+				<li class="functional-item wow fadeInRight" data-wow-offset="100">
 					<div class="functional-item__text">
 						<h2 class="heading">Including support for every ico</h2>
 						<p class="description">Add 'Custom Coins' for an ICO that hasn't hit any exchange yet. This means that you can properly track your investment without having to add 'Fiat’ transactions with a note attached to it.</p>
@@ -145,6 +147,84 @@
 			</ul>
 		</div>
 		<div class="angle-bottom"></div>
+	</section>
+
+	<!-- reviews -->
+	<section class="reviews">
+		<div class="container">
+			<h2 class="reviews-heading">What our users say</h2>
+			<ul class="reviews-list js-reviewSlider">
+				<li class="reviews-item">
+					<p class="reviews-item__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliquat enim ad minim veniam.</p>
+					<div class="reviews-item__img">
+						<img src="./img/reviews/1.jpg" alt="">
+					</div>
+					<h4 class="reviews-item__name">Sean Farmer</h4>
+					<h6 class="review-item__job">Job title</h6>
+				</li>
+				<li class="reviews-item">
+					<p class="reviews-item__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliquat enim ad minim veniam.</p>
+					<div class="reviews-item__img">
+						<img src="./img/reviews/1.jpg" alt="">
+					</div>
+					<h4 class="reviews-item__name">Sean Farmer</h4>
+					<h6 class="review-item__job">Job title</h6>
+				</li>
+				<li class="reviews-item">
+					<p class="reviews-item__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliquat enim ad minim veniam.</p>
+					<div class="reviews-item__img">
+						<img src="./img/reviews/1.jpg" alt="">
+					</div>
+					<h4 class="reviews-item__name">Sean Farmer</h4>
+					<h6 class="review-item__job">Job title</h6>
+				</li>
+				<li class="reviews-item">
+					<p class="reviews-item__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliquat enim ad minim veniam.</p>
+					<div class="reviews-item__img">
+						<img src="./img/reviews/1.jpg" alt="">
+					</div>
+					<h4 class="reviews-item__name">Sean Farmer</h4>
+					<h6 class="review-item__job">Job title</h6>
+				</li>
+				<li class="reviews-item">
+					<p class="reviews-item__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliquat enim ad minim veniam.</p>
+					<div class="reviews-item__img">
+						<img src="./img/reviews/1.jpg" alt="">
+					</div>
+					<h4 class="reviews-item__name">Sean Farmer</h4>
+					<h6 class="review-item__job">Job title</h6>
+				</li>
+
+				<li class="reviews-item">
+					<p class="reviews-item__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliquat enim ad minim veniam.</p>
+					<div class="reviews-item__img">
+						<img src="./img/reviews/1.jpg" alt="">
+					</div>
+					<h4 class="reviews-item__name">Sean Farmer</h4>
+					<h6 class="review-item__job">Job title</h6>
+				</li>
+			</ul>
+		</div>
+	</section>
+
+	<!-- contact -->
+	<section class="contact">
+		<div class="contact-download">
+			<a class="contact-download__link" href="#">
+				<img src="./img/appstore.png" alt="">
+			</a>
+			<a class="contact-download__link" href="#">
+				<img src="./img/googleplay.png" alt="">
+			</a>
+		</div>
+		<ul class="contact-social__list">
+			<li class="contact-social__item"><a href="#" class="contact-social__link"><i class="icon-instagram"></i></a></li>
+			<li class="contact-social__item"><a href="#" class="contact-social__link"><i class="icon-linkedin"></i></a></li>
+			<li class="contact-social__item"><a href="#" class="contact-social__link"><i class="icon-youtube-play"></i></a></li>
+			<li class="contact-social__item"><a href="#" class="contact-social__link"><i class="icon-facebook"></i></a></li>
+			<li class="contact-social__item"><a href="#" class="contact-social__link"><i class="icon-twitter"></i></a></li>
+			<li class="contact-social__item"><a href="#" class="contact-social__link"><i class="icon-reddit-alien"></i></a></li>
+		</ul>
 	</section>
 
 	<footer class="footer">
@@ -167,8 +247,9 @@
 			<p class="footer-copy">&copy; 2019 BTCkeeper</p>
 		</div>
 	</footer>
-
+	
 	<script src="js/slick.min.js"></script>
+	<script src="js/wow.js"></script>
 	<script src="js/index.js"></script>
 </body>
 </html>

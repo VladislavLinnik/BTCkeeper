@@ -1,0 +1,105 @@
+.reviews {
+    margin-bottom: 40px;
+
+    .slick-slider .slick-track, .slick-slider .slick-list {margin-bottom: 30px;}
+
+    &-heading {
+        margin-bottom: 50px;
+        padding-top: 10px;
+        color: $purple;
+        font-size: 48px;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    &-list {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        
+        .reviews-btn {
+            position: absolute;
+            bottom: 0;
+            transform: translateX(-50%);
+            background-color: transparent;
+            font-size: 20px;
+            cursor: pointer;
+
+            &.btn-prev {
+                margin-right: 10%;
+                right: 50%;
+            }
+
+            &.btn-next {
+                margin-left: 10%;
+                left: 50%;
+            }
+        }
+
+        .slick-dots {
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            transform: translateX(-50%);
+
+            li {
+                height: 10px;
+                width: 10px;
+                display: inline-block;
+                border: 2px solid rgba($dark-purple, .3);
+                border-radius: 50%;
+
+                &.slick-active {
+                    background-color: $purple;
+                    border-color: $purple;
+                }
+
+                &:not(:last-child) {
+                    margin-right: 20px;
+                }
+
+                button {
+                    background-color: transparent;
+                    text-indent: -9999px;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    &-item {
+        width: 33%;
+        padding: 60px 45px;
+        text-align: center;
+
+        &__text {
+            color: $purple-text;
+            font-size: 20px;
+            line-height: 1.4;
+        }
+
+        &__img {
+            margin: 60px auto 25px;
+            height: 65px;
+            width: 65px;
+            border-radius: 50%;
+            overflow: hidden;
+
+            img {
+                max-width: 100%;
+            }
+        }
+        
+        &__name {
+            margin-bottom: 8px;
+            color: $purple-text;
+            font-size: 20px;
+            font-weight: 500;
+        }
+
+        &__job {
+            font-size: 16px;
+            color: rgba(110, 52, 194, 0.3);
+        }
+    }
+}

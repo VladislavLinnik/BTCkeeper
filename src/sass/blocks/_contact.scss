@@ -1,0 +1,53 @@
+.contact {
+
+    &-download {
+        margin-bottom: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        & > *:first-child {
+            margin-right: 28px;
+        }
+
+        &__link {
+            display: inline-block;
+
+            img {
+                max-width: 100%;
+            }
+        }
+    }
+    
+    &-social {
+
+        &__list {
+            display: flex;
+            justify-content: center;
+        }
+
+        &__item {
+            height: 36px;
+            width: 36px;
+            background-color: $purple;
+            border-radius: 50%;
+
+            &:hover {
+                background-color: darken($purple, 20%);
+            }
+            
+            &:not(:last-child) {
+                margin-right: 28px;
+            }
+        }
+
+        &__link {
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            font-size: 18px;
+        }
+    }
+}

@@ -1,0 +1,52 @@
+.header {
+    padding: 15px 0;
+    background-color: #fafafa;
+    box-shadow: 0 2px 7px 0 rgba(0, 0, 0, 0.08);
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &-nav {
+
+        &__menu {
+            display: flex;
+            
+            .menu-item {
+                
+                &:not(:last-child) {
+                    margin-right: 28px;
+                }
+                
+                &__link {
+                    position: relative;
+                    color: $purple;
+                    font-size: 18px;
+                    transition: color .3s;
+
+                    &:hover {
+                        color: darken($purple, 15%);
+
+                        &:after {
+                            content: '';
+                            width: 100%;
+                        }
+                    }
+
+                    &:after {
+                        content: '';
+                        height: 2px;
+                        width: 0;
+                        position: absolute;
+                        bottom: -5px;
+                        left: 0;
+                        background-color: darken($purple, 30%);
+                        transition: all .3s;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -75,6 +75,10 @@ body {
         height: 15vh;
     }
 
+    @media (max-width: 500px) {
+        height: 10vh;
+    }
+
     &:after {
         content: "";
         display: block;
@@ -90,6 +94,10 @@ body {
         @media (max-width: 900px) {
             border-bottom: 15vh solid $purple;
         }
+
+        @media (max-width: 500px) {
+            border-bottom: 10vh solid $purple;
+        }
     }
 }
 .angle-bottom {
@@ -99,6 +107,10 @@ body {
     
     @media (max-width: 900px) {
         height: 15vh;
+    }
+
+    @media (max-width: 500px) {
+        height: 10vh;
     }
 
     &:after {
@@ -116,6 +128,10 @@ body {
         @media (max-width: 900px) {
             border-top: 15vh solid $purple;
         }
+
+        @media (max-width: 500px) {
+            border-top: 10vh solid $purple;
+        }
     }
 }
 
@@ -126,6 +142,10 @@ body {
 
     @media (max-width: 900px) {
         height: 15vh;
+    }
+
+    @media (max-width: 500px) {
+        height: 10vh;
     }
 
     &:after {
@@ -142,6 +162,10 @@ body {
 
         @media (max-width: 900px) {
             border-bottom: 15vh solid $dark-purple;
+        }
+
+        @media (max-width: 500px) {
+            border-bottom: 10vh solid $dark-purple;
         }
     }
 }

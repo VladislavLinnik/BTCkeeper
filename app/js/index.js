@@ -46,14 +46,14 @@ $("#menu").on("click","a", function (event) {
 });
 
 // sticky header
-$(window).scroll(function() {
-    if ($(this).scrollTop() > 500){
-        $('.header').addClass("header--fixed");
-    }
-    else{
-        $('.header').removeClass("header--fixed");
-    }
-});
+// $(window).scroll(function() {
+//     if ($(this).scrollTop() > 500){
+//         $('.header').addClass("header--fixed");
+//     }
+//     else{
+//         $('.header').removeClass("header--fixed");
+//     }
+// });
 
 // mobile navbar
 $( '.nav-toggler' ).click( function() {

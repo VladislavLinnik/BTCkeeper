@@ -45,11 +45,16 @@
             font-weight: bold;
 
             @media (max-width: 1000px) {
+                padding-right: 0;
                 text-align: center;
             }
 
             @media (max-width: 850px) {
                 font-size: 36px;
+            }
+
+            @media (max-width: 500px) {
+                font-size: 30px;
             }
         }
 
@@ -58,6 +63,11 @@
             @media (max-width: 1000px) {
                 display: flex;
                 justify-content: center;
+            }
+
+            @media (max-width: 500px) {
+                flex-direction: column;
+                align-items: center;
             }
 
             .btn {
@@ -73,6 +83,11 @@
                     margin-right: 18px;
                     background-color: #fff;
                     color: $purple;
+
+                    @media (max-width: 500px) {
+                        margin-right: 0;
+                        margin-bottom: 10px;
+                    }
                 }
 
                 &--transparent {

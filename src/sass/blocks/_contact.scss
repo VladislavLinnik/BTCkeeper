@@ -9,6 +9,11 @@
 
         & > *:first-child {
             margin-right: 28px;
+
+            img {
+                height: 56px;
+                width: 180px;
+            }
         }
 
         @media (max-width: 450px) {

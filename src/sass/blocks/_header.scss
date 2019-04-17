@@ -1,7 +1,9 @@
 .header {
     padding: 15px 0;
+    position: relative;
     background-color: #fafafa;
     box-shadow: 0 2px 7px 0 rgba(0, 0, 0, 0.08);
+    z-index: 100;
 
     &--fixed {
         width: 100%;
@@ -49,6 +51,11 @@
                 
                 &:not(:last-child) {
                     margin-right: 28px;
+
+                    @media (max-width: 700px) {
+                        margin-right: 0;
+                        margin-bottom: 3px;
+                    }
                 }
                 
                 &__link {
@@ -75,6 +82,10 @@
                         left: 0;
                         background-color: darken($purple, 30%);
                         transition: all .3s;
+
+                        @media (max-width: 700px) {
+                            bottom: 0;
+                        }
                     }
                 }
             }

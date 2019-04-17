@@ -3,10 +3,20 @@
     min-height: 250px;
     background-color: $purple;
     color: #fff;
+    overflow-x: hidden;
+    overflow-y: hidden;
 
     .container {
-        padding: 100px 10px 20px;
+        height: 400px;
+        padding: 0 10px;
         display: flex;
+        align-items: center;
+
+        @media (max-width: 1000px) {
+            height: auto;
+            padding: 0 10px;
+            flex-direction: column;
+        }
 
         @media (max-width: 700px) {
             padding: 0 30px;
@@ -20,7 +30,12 @@
 
     &-info {
         padding-right: 40px;
-        width: 65%;
+        flex: 1;
+
+        @media (max-width: 1000px) {
+            margin-bottom: 40px;
+            padding-right: 0;
+        }
 
         &__heading {
             margin-bottom: 40px;
@@ -28,9 +43,22 @@
             font-size: 48px;
             line-height: normal;
             font-weight: bold;
+
+            @media (max-width: 1000px) {
+                text-align: center;
+            }
+
+            @media (max-width: 850px) {
+                font-size: 36px;
+            }
         }
 
         &__buttons {
+
+            @media (max-width: 1000px) {
+                display: flex;
+                justify-content: center;
+            }
 
             .btn {
                 padding: 15px 30px;
@@ -51,6 +79,63 @@
                     background-color: transparent;
                     color: #fff;
                     border: solid 1px #ffffff;
+                }
+            }
+        }
+    }
+    
+    &-mockup {
+        height: 100%;
+        flex: 1;
+
+        @media (max-width: 1000px) {
+            
+        }
+
+        .mockup {
+            height: 100%;
+            position: relative;
+            bottom: 0;
+            z-index: 99;
+
+            @media (max-width: 1000px) {
+                display: flex;
+            }
+
+            .macbook {
+                position: absolute;
+                top: 0;
+
+                @media (max-width: 1000px) {
+                    position: static;
+                    flex: 1;
+                }
+
+                img {
+                    width: 120%;
+
+                    @media (max-width: 1000px) {
+                        width: 170%;
+                    }
+                }
+            }
+
+            .iphone {
+                position: absolute;
+                top: 25%;
+
+                @media (max-width: 1000px) {
+                    position: static;
+                    flex: 1;
+                    text-align: right;
+                }
+
+                img {
+                    width: 80%;
+
+                    @media (max-width: 1000px) {
+                        width: 58%;
+                    }
                 }
             }
         }

@@ -4,10 +4,29 @@
     background-color: $dark-purple;
     color: #fff;
 
+    @media (max-width: 850px) {
+        padding-bottom: 2%;
+    }
+
     &-wrapper {
         margin-bottom: 35px;
         display: flex;
         justify-content: space-between;
+
+        @media (max-width: 850px) {
+            margin-bottom: 15px;
+        }
+    }
+
+    &-logo {
+        display: block;
+
+        img {
+            
+            @media (max-width: 850px) {
+                max-width: 80%;
+            }
+        }
     }
 
     &-nav {

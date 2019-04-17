@@ -10,6 +10,10 @@
         font-size: 48px;
         font-weight: bold;
         text-align: center;
+
+        @media (max-width: 850px) {
+            margin-bottom: 0;
+        }
     }
 
     &-list {
@@ -22,17 +26,41 @@
             bottom: 0;
             transform: translateX(-50%);
             background-color: transparent;
+            color: $purple;
             font-size: 20px;
             cursor: pointer;
+
+            @media (max-width: 850px) {
+                font-size: 26px;
+                transform: translateY(5px);
+            }
 
             &.btn-prev {
                 margin-right: 10%;
                 right: 50%;
+
+                @media (max-width: 850px) {
+                    margin-right: 20%;
+                }
+
+                @media (max-width: 650px) {
+                    right: auto;
+                    left: 0;
+                }
             }
 
             &.btn-next {
                 margin-left: 10%;
                 left: 50%;
+
+                @media (max-width: 850px) {
+                    margin-left: 20%;
+                }
+
+                @media (max-width: 650px) {
+                    left: auto;
+                    right: 0;
+                }
             }
         }
 
@@ -49,6 +77,11 @@
                 border: 2px solid rgba($dark-purple, .3);
                 border-radius: 50%;
 
+                @media (max-width: 850px) {
+                    height: 15px;
+                    width: 15px;
+                }
+
                 &.slick-active {
                     background-color: $purple;
                     border-color: $purple;
@@ -56,6 +89,10 @@
 
                 &:not(:last-child) {
                     margin-right: 20px;
+
+                    @media (max-width: 650px) {
+                        margin-right: 10px;
+                    }
                 }
 
                 button {
@@ -71,6 +108,10 @@
         width: 33%;
         padding: 60px 45px;
         text-align: center;
+
+        @media (max-width: 850px) {
+            padding: 30px;
+        }
 
         @media (max-width: 700px) {
             width: 100%;
@@ -88,6 +129,10 @@
             width: 65px;
             border-radius: 50%;
             overflow: hidden;
+
+            @media (max-width: 850px) {
+                margin: 30px auto 20px;
+            }
 
             img {
                 max-width: 100%;

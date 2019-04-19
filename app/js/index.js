@@ -64,3 +64,16 @@ $( '.nav-toggler' ).click( function() {
         $( '#menu' ).hide('slideToggle');
     }
 });
+
+
+// popup
+$(function(){
+  $('.js-popupForMobile').click(function(e){
+    e.preventDefault();
+    $('.popup, .popup_overlay').fadeIn(400); //показываем всплывающее окно
+  });
+  $('.popup-close, .popup_overlay').click(function(e){
+    e.preventDefault();
+    $('.popup, .popup_overlay').fadeOut(400); //скрываем всплывающее окно
+  });
+});
